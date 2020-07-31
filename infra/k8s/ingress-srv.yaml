@@ -10,11 +10,11 @@ spec:
         - host: posts.com
           http:
             paths:
-              - path: /post/create
+              - path: /posts/create
                 backend:
                     serviceName: post-cluster-srv
                     servicePort: 4000
-              - path: /post
+              - path: /posts
                 backend:
                     serviceName: query-srv
                     servicePort: 4002

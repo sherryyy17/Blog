@@ -10,7 +10,7 @@ app.use(cors());
 
 const posts = {};
 
-app.post('/post/create',(req,res) =>{
+app.post('/posts/create',(req,res) =>{
     const id = randomBytes(4).toString("hex");
     const {title} = req.body;
     
